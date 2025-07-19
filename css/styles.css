@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: Montserrat, sans-serif;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f0c040;
+    border-radius: 0 0 25px 25px;
+    border-bottom: 3px solid darkred;;
+}
+
+header, main {
+    position: relative;
+    z-index: 1;
+}
+header::before, main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/bghero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+    pointer-events: none;
+}
+
+li {
+    list-style: none;
+    color: darkred;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    font-weight: 650;
+}
+
+.nav-links li {
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li:hover{
+    font-size: 20px;
+}
+.nav-links button {
+    font-size: 18px;
+    padding: 5px 15px;
+    background-color: darkred;
+    color: #f0c040;;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links button:hover {
+    background-color: #f0c040;
+    border: 2px solid darkred;
+    color: darkred;
+    font-size: 17.5px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.hero button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: darkred;
+    border: 2px solid darkred;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.dot {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: darkred;
+
+}
+
+.icon {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.icon:hover {
+    transform: rotate(-10deg);
+}
+
+.hero img {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: unset;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    color: darkred;
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+
+.hero-text h2 {
+    font-size: 20px;
+    color: darkred;
+    font-weight: 620;
+    margin-top: -6px;
+}
+
+.hero-text p {
+    font-size: 15px;
+    color: #f5bb19;
+    font-weight: 600;
+    margin-top: -1px;
+    text-align: justify;
+}
+
+.dis {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: rotate(30deg) translateY(-30%);
+    width: 400px;
+    height: 400px;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+.crta h1 {
+    font-size: 35px;
+    font-weight: 650;
+    color: darkred;
+    text-align: center;
+}
+
+.crta p {
+    font-size: 15px;
+    color: #f5bb19;
+    font-weight: 600;
+    text-align: justify;
+    margin: 5px 5%;
+}
+
+.crta-images {
+    margin-top: 20px;
+    display: flex;
+    border-radius: 15px;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.crta-images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 0 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.formul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.formul h1 {
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 650;
+    color: darkred;
+    text-align: center;
+}
+
+.formul form {
+    background-color: #f0c040;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    border: 3px solid darkred;
+    padding: 15px 20px;
+    border-radius: 15px;
+}
+
+.formul label {
+    font-size: 18px;
+    color: darkred;
+    font-weight: 600;
+}
+
+.formul input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid darkred;
+    border-radius: 15px;
+    font-size: 16px;
+    color: darkred;
+}
+
+.formul button {
+    margin-top: 10px;
+    color: darkred;
+    font-weight: 650;
+    border: 2px solid darkred;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.formul button:hover {
+    background-color: darkred;
+    color: #f0c040;
+    font-size: 17.5px;
+    margin-bottom: 8px;
+}
+
+.confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    border: 3px solid darkred;
+    border-radius: 15px;
+    padding: 20px 30px;
+    font-weight: 650;
+    color: darkred;
+    background-color: #f0c040;}

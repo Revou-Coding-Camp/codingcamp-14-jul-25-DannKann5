@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale4Sale | KeripikSale#1</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header id="beranda">
+        <img class="logo" src="assets/Sale4Sale.png" alt="logo">
+        <ul class="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#st">Cerita Kami</a></li>
+            <a href="#mar"><button>Marketplace</button></a>
+        </ul>
+    </header>
+    <main>
+        <div class="hero">
+            <span class="dot"><img class="icon" src="assets/icon.png" alt="icon"></span>
+            <div class="hero-text">
+                <h1>Halo! <span id="welcome-user">[User]</span></h1>
+                <h2>Selamat datang di website KeripikSale nomor #1 di Indonesia</h2>
+                <p>Jadi, Sale4Sale adalah brand makanan lokal khususnya 'Sale' dari Indonesia,<br>
+                   kami berupaya merambatkan Sale ke Mata Dunia tanpa pandangan<em> Kampungan.<br></em>
+                   Dengan menambahkan sentuhan modern, kami menyalurkan Sale dari<br>
+                   => Dapur Tradisional, hingga Tangan Milenial!
+                </p>
+                <a href="#mar"><button>Mau Coba?</button></a>
+            </div>
+        </div>
+        <img src="assets/display.png" alt="display" class="dis">
+        <div id="st" class="crta">
+            <h1>Cerita Kami🍌</h1>
+            <p>Menurut Artikel dari <a href="https://www.kompasiana.com/ardinarosanti8538/66659f44c925c448ff1e94f3/dilema-kuliner-nusantara-mengapa-generasi-z-kurang-berminat-pada-jajanan-tradisional"><u>Kompasiana</u></a>
+                bahwa sedikit dari 'Remaja' Indonesia yang memiliki minat terhadap Jajanan Tradisional,
+                latar belakang ini mendorong kami supaya bagaimanapun caranya 'Anak-anak hingga Remaja'
+                menyukai dan mau untuk mencoba jajanan tradisional tersebut, dengan menambah sedikit ornamen
+                kekinian tanpa merubah cita rasa, kami menghadirkan Sale dengan varian-varian khas Generasi Z.
+            </p>
+            <div class="crta-images">
+                <img src="assets/sa1.jpeg" alt="foto">
+                <img src="assets/sa2.jpeg" alt="foto">
+                <img src="assets/sa3.jpeg" alt="foto">
+            </div>
+        </div>
+        <div class="formul" id="mar">
+            <form id="order-form">
+                <h1>Formulir Pesanan:</h1>
+                <label for="name">Nama:</label>
+                <input placeholder="Danau" type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input placeholder="akusukasale@gmail.com" type="email" id="email" name="email" required>
+
+                <label for="product">Produk:</label>
+                <select id="product" name="product" required>
+                    <option value="sale-original">Sang Origin</option>
+                    <option value="sale-spicy">Matcha Le!</option>
+                    <option value="sale-cheese">Salkeju</option>
+                </select>
+
+                <label for="quantity">Jumlah:</label>
+                <input placeholder="2" type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="address">Alamat Pengiriman:</label>
+                <textarea style="padding: 20px 35px; border-radius: 15px;" placeholder="Jl. Suka Sale" id="address" name="address" rows="4" required></textarea>
+
+                <a href=""><button type="submit">Pesan Sekarang via Whatsapp</button></a>
+            </form>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
